@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Screen Stream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="green-screen">
+        <div id="match-board">
+            <div class="side-container" id="left-container">
+                <div class="alliance-box" id="red-team">
+                    <div class="team-box" id="team1"></div>
+                    <div class="team-box" id="team2"></div>
+                </div>
+                <div id="match-number-label">MATCH: 15</div>
+            </div>
+            <div id="middle-container">
+                <div id="logo-container">
+                    <img id="logo" src="./SK_FG_KRIVKY144dpi_White.png">
+                </div>
+                <div id="time-counter"></div>
+            </div>
+            <div class="side-container" id="right-container">
+                <div class="alliance-box" id="blue-team">
+                    <div class="team-box" id="team3"></div>
+                    <div class="team-box" id="team4"></div>
+                </div>
+                <div id="text-label">FIRST Global Slovakia 2024</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="board" id="board">
+        <div class="alliance" id="red-alliance">
+            <div class="team-selection">
+                <select id="team-select-blue1"></select>
+                <select id="team-select-blue2"></select>
+            </div>
+        </div>
+
+        <button id="button-switch" onclick=swapScene()>Swap</button>
+
+        <div class="alliance" id="blue-alliance">
+            <div class="team-selection">
+                <select id="team-select-red1"></select>
+                <select id="team-select-red2"></select>
+            </div>
+        </div>
+
+        Číslo zápasu:<input type="text" id="match-number">
+        <a href="results.html">Results</a>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>

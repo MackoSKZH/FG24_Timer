@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-text-font-family);
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: green; */
+    overflow: hidden;
+    cursor: none;
+    background: rgba(0,0,0,0);
+    background-size: contain;
+}
+
+#result-board {
+    height: 100vh;
+    width: 60vw;
+    /* border: dashed 4px white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* background-color: rgba(131, 131, 131, 0.3); */
+}
+
+/*---------------------------------- Header ----------------------------------*/
+#header {
+    width: 100%;
+    height: 10%;
+    /* border: dashed 2px black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#results-lable{
+    font-size: 5vh;
+    font-weight: bolder;
+    color: white;
+    /* border: dashed 2px black; */
+}
+
+#match-number {
+    font-size: 5vh;
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+#score-boards {
+    width: 100%;
+    height: 90%;
+    /* border: dashed 2px black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#team1, #team2, #team3, #team4 {
+    width: 100%;
+    height: 100%;
+    font-size: 5vh;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+    color: white;
+    /* border: dashed 2px black; */
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+/*---------------------------------- Teams ----------------------------------*/
+#red-score-board, #blue-score-board {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+#red-alliance, #blue-alliance {
+    width: 100%;
+    height: 20%;
+    /* border: dashed 2px black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+#red-alliance {
+    background-color: var(--first-alliance-color);
+}
+#blue-alliance {
+    background-color: var(--second-alliance-color);
+}
+
+/* --------------------------------------------------- */
+#red-point-categories, #blue-point-categories {
+    width: 100%;
+    height: 70%;
+    /* border: dashed 2px black; */
+    display: flex;
+    flex-direction: row;
+}
+#red-point-categories {
+    background-color: var(--first-alliance-color);
+}
+#blue-point-categories {
+    background-color: var(--second-alliance-color);
+}
+
+#red-point-description, #blue-point-description {
+    width: 70%;
+    height: 100%;
+    /* border: dashed 2px black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#red-points, #blue-points {
+    width: 30%;
+    height: 100%;
+    /* border: dashed 2px black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.point-label-white, .point-value-white {
+    width: 97%;
+    height: 16%;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+.point-label-white, .point-label-grey {
+    font-weight: bold;
+    font-size: 2vh;
+    align-content: center;
+    padding-left: 10px;
+}
+
+.point-value-white, .point-value-grey {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    align-content: center;
+}
+
+.point-label-grey, .point-value-grey {
+    width: 97%;
+    height: 16%;
+    background-color: lightgrey;
+    border-style: solid;
+    border-color: black;
+}
+
+#red-point-label6, #blue-point-label6,
+#red-point-value6, #blue-point-value6 {
+    color:var(--first-alliance-color);
+}
+
+/* --------------------------------------------------- */
+#red-score-sum, #blue-score-sum {
+    width: 100%;
+    height: 10%;
+    /* border: dashed 2px black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#red-total-label, #red-total-score,
+#blue-total-label, #blue-total-score {
+    height: 100%;
+    /* border: dashed 2px black; */
+    color: white;
+    align-content: center;
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+#red-total-label, #red-total-score {
+    background-color: var(--first-alliance-color);
+}
+
+#blue-total-label, #blue-total-score {
+    background-color: var(--second-alliance-color);
+}
+
+#red-total-label, #blue-total-label {
+    width: 40%;
+    padding: 10px;
+}
+
+#red-total-score, #blue-total-score {
+    text-align: center;
+    width: 30%;
+}

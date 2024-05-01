@@ -1,0 +1,6 @@
+:root {
+    --body-text-font-family:'Arial', sans-serif;
+    --first-alliance-color: red;
+    --second-alliance-color: rgb(0, 145, 250);
+    --border-radius: 10px;
+}
